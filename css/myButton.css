@@ -1,0 +1,150 @@
+.social-links {
+  flex-wrap: wrap;
+  /*justify-content: left;*/
+}
+
+.social-links,.flex-center {
+  display: flex;
+  /*justify-content: center;*/
+  align-items: center;
+  /*width: 50%;*/
+}
+
+.social-btn {
+  cursor: pointer;
+  height: 50px;
+  width: 50px;
+  font-family: 'Titillium Web', sans-serif;
+  color: #333;
+  /*border: 0.5px solid #bdbdbd;*/
+  border-radius: 10px;
+  box-shadow: 0px 10px 10px rgba(0,0,0,0.1);
+  background: white;
+  margin: 5px;
+  transition: 0.3s;
+  justify-content: center;
+}
+
+.social-btn svg {
+  height: 24px;
+  width: 24px;
+}
+
+.social-btn span {
+  width: 0px;
+  overflow: hidden;
+  transition: 0.3s;
+  text-align: center;
+  margin-left: 5px;
+}
+
+.social-btn:hover {
+  width: 200px;
+  border-radius: 5px;
+}
+
+.social-btn:hover span {
+  padding: 2px;
+  width: 60%;
+}
+
+/*#twitter svg {*/
+/*  fill: #1da1f2;*/
+/*}*/
+
+/*#linkedin svg {*/
+/*  fill: #0e76a8;*/
+/*}*/
+
+/*#github {*/
+/*  fill: #333;*/
+/*}*/
+
+
+/*========================*/
+
+/*.select {*/
+/*  width: fit-content;*/
+/*  cursor: pointer;*/
+/*  position: relative;*/
+/*  transition: 300ms;*/
+/*  color: white;*/
+/*  overflow: hidden;*/
+/*}*/
+
+/*.selected {*/
+/*  background-color: #2a2f3b;*/
+/*  padding: 5px;*/
+/*  margin-bottom: 3px;*/
+/*  border-radius: 5px;*/
+/*  position: relative;*/
+/*  z-index: 100000;*/
+/*  font-size: 15px;*/
+/*  display: flex;*/
+/*  align-items: center;*/
+/*  justify-content: space-between;*/
+/*}*/
+
+.arrow {
+  position: relative;
+  right: 0px;
+  height: 10px;
+  transform: rotate(-90deg);
+  width: px;
+  fill: black;
+  z-index: 100000;
+  transition: 300ms;
+}
+
+/*.options {*/
+/*  display: flex;*/
+/*  flex-direction: column;*/
+/*  border-radius: 5px;*/
+/*  padding: 5px;*/
+/*  background-color: #2a2f3b;*/
+/*  position: relative;*/
+/*  top: -100px;*/
+/*  opacity: 0;*/
+/*  transition: 300ms;*/
+/*  overflow: auto;*/
+/*  height: 200px;*/
+/*}*/
+
+/*.select:hover > .options {*/
+/*  opacity: 1;*/
+/*  top: 0;*/
+/*}*/
+
+/*.select:hover > .selected .arrow {*/
+/*  transform: rotate(0deg);*/
+/*}*/
+
+/*.option {*/
+/*  border-radius: 5px;*/
+/*  padding: 5px;*/
+/*  transition: 300ms;*/
+/*  background-color: #2a2f3b;*/
+/*  width: 150px;*/
+/*  font-size: 15px;*/
+/*}*/
+
+/*.option:hover {*/
+/*  background-color: #323741;*/
+/*}*/
+
+/*.options input[type="radio"] {*/
+/*  display: none;*/
+/*}*/
+
+/*.options label {*/
+/*  display: inline-block;*/
+/*  font-size: 12px;*/
+/*}*/
+
+/*.options label::before {*/
+/*  content: attr(data-txt);*/
+/*}*/
+
+/*.options input[type="radio"]:checked + label {*/
+/*  display: none;*/
+/*}*/

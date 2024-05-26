@@ -1,0 +1,15 @@
+
+.waterfull{
+    position: relative;
+    width: 100%;
+    height: 80%;
+    margin: 50px auto;
+    /*overflow: auto;*/
+}
+
+.waterfull img{
+    position: absolute;
+    width: 220px;
+    border-radius: 10px;
+    transition: all 0.3ms;
+}

@@ -1,0 +1,325 @@
+
+
+.card, .card_2, .card_3{
+    width: 100%;
+    height: 500px;
+    overflow: visible;
+    /*position: relative;*/
+}
+
+.card div, .card_2 div, .card_3 div{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    transition: 0.5s;
+}
+.card img, .card_2 img, .card_3 img{
+    /*width: 100%;*/
+    /*height: 100%;*/
+    position: absolute;
+    object-fit: contain;
+    transition: 0.5s;
+}
+/*.card .slider_image{*/
+/*    object-fit: none;*/
+/*}*/
+.card .cover_sub_1{
+    z-index: 1;
+    height: 80%;
+    margin-left: 5%;
+    margin-top: 5%;
+    opacity: 0;
+    /*margin-top: 50px;*/
+    /*transform: perspective(1000px) translate3d(0, -50px, 100px);*/
+}
+
+.card .cover_sub_2{
+    z-index: 1;
+    height: 80%;
+    right: 0;
+    bottom: 0;
+    margin-right: 8%;
+    opacity: 0;
+    /*margin-left: 200px;*/
+    /*transform: perspective(1000px) translate3d(0, -50px, 100px);*/
+}
+
+.card .cover_sub_3{
+    z-index: 1;
+    height: 15%;
+    top: 25%;
+    left: 36%;
+    opacity: 0;
+    /*margin-left: 200px;*/
+    /*transform: perspective(1000px) translate3d(0, -50px, 100px);*/
+}
+
+.card .cover_sub_4{
+    z-index: 1;
+    height: 35%;
+    top: 55%;
+    left: 40%;
+    opacity: 0;
+    /*margin-left: 200px;*/
+    /*transform: perspective(1000px) translate3d(0, -50px, 100px);*/
+}
+
+.card .cover_back{
+    box-shadow: none;
+    transform: rotateX(0deg);
+    filter: blur(0px);
+    /*box-shadow: 0 15px 35px -8px rgba(0, 0, 0, 0.7);*/
+    /*transform: perspective(1000px) rotateX(10deg);*/
+    /*filter: blur(6px);*/
+}
+
+.card:hover .cover_back{
+    box-shadow: 0 15px 35px -8px rgba(0, 0, 0, 0.7);
+    transform: perspective(1000px) rotateX(10deg);
+    filter: blur(6px);
+    /*box-shadow: none;*/
+    /*transform: rotateX(0deg);*/
+    /*filter: blur(0px);*/
+}
+
+.card:hover .cover_sub_1{
+    transform: perspective(1000px) translate3d(0, -50px, 100px);
+    opacity: 1;
+    /*transform: translate3d(0, 0, 0);*/
+}
+
+.card:hover .cover_sub_2{
+    transform: perspective(1000px) translate3d(0, -50px, 100px);
+    opacity: 1;
+    /*transform: translate3d(0, 0, 0);*/
+}
+
+.card:hover .cover_sub_3{
+    transform: perspective(1000px) translate3d(0, -50px, 100px);
+    /*transform: translate3d(0, 0, 0);*/
+    opacity: 1;
+}
+
+.card:hover .cover_sub_4{
+    transform: perspective(1000px) translate3d(0, -50px, 100px);
+    /*transform: translate3d(0, 0, 0);*/
+    opacity: 1;
+}
+
+
+
+.slider_image_2cols{
+    height: 100%;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 100%;
+}
+
+.slider_image_2cols .image_2cols_1{
+    grid-column-start: 1;
+    grid-column-end: 2;
+}
+
+.slider_image_2cols .image_2cols_2{
+    grid-column-start: 2;
+    grid-column-end: 3;
+}
+
+.card_2 .cover_sub_1{
+    z-index: 3;
+    height: 100%;
+    opacity: 0;
+}
+
+.card_2 .cover_sub_left_1{
+    z-index: 3;
+    height: 100%;
+    opacity: 0;
+}
+
+.card_2 .cover_sub_2{
+    z-index: 3;
+    height: 20%;
+    top: 50%;
+    left: 40%;
+    opacity: 0;
+}
+
+.card_2 .cover_sub_left_2{
+    z-index: 3;
+    height: 20%;
+    top: 50%;
+    left: 15%;
+    opacity: 0;
+}
+
+.card_2 .cover_sub_3{
+    z-index: 3;
+    height: 5%;
+    top: 40%;
+    left: 70%;
+    opacity: 0;
+}
+
+.card_2 .cover_sub_left_3{
+    z-index: 3;
+    height: 8%;
+    top: 40%;
+    left: 18%;
+    opacity: 0;
+}
+
+.card_2 .cover_sub_4{
+    z-index: 3;
+    height: 10%;
+    top: 80%;
+    left: 50%;
+    opacity: 0;
+}
+
+.card_2 .cover_sub_left_4{
+    z-index: 3;
+    height: 10%;
+    top: 80%;
+    left: 20%;
+    opacity: 0;
+}
+
+.card_2 .cover_back_left{
+    z-index: 1;
+}
+
+.card_2 .cover_back_right{
+    z-index: 1;
+}
+
+.image_2cols_title {
+    z-index: 3;
+    height: 10%;
+    top: 45%;
+    align-self: center;
+    justify-self: center;
+    position: absolute;
+    opacity: 1;
+    transition: 0.5s;
+}
+
+.card_2:hover .cover_back_left{
+    transform: perspective(1000px) translate3d(0, 0, 100px);
+    filter: blur(6px);
+    z-index: 2;
+}
+
+.card_2:hover .cover_back_right{
+    transform: perspective(1000px) translate3d(0, 0, 100px);
+    filter: blur(6px);
+    z-index: 2;
+}
+
+.card_2:hover .cover_sub_1{
+    opacity: 1;
+    transform: perspective(1000px) translate3d(0, -50px, 20px);
+}
+
+.card_2:hover .cover_sub_left_1{
+    opacity: 1;
+    transform: perspective(1000px) translate3d(0, -50px, 20px);
+}
+
+.card_2:hover .cover_sub_2{
+    opacity: 1;
+    transform: perspective(1000px) translate3d(0, -50px, 50px);
+}
+
+.card_2:hover .cover_sub_left_2{
+    opacity: 1;
+    transform: perspective(1000px) translate3d(0, -50px, 50px);
+}
+
+.card_2:hover .cover_sub_3{
+    opacity: 1;
+    transform: perspective(1000px) translate3d(0, -50px, 50px);
+}
+
+.card_2:hover .cover_sub_left_3{
+    opacity: 1;
+    transform: perspective(1000px) translate3d(0, -50px, 50px);
+}
+
+.card_2:hover .cover_sub_4{
+    opacity: 1;
+    transform: perspective(1000px) translate3d(0, -50px, 50px);
+}
+
+.card_2:hover .cover_sub_left_4{
+    opacity: 1;
+    transform: perspective(1000px) translate3d(0, -50px, 50px);
+}
+
+.slider_image_2cols:hover .image_2cols_title{
+    opacity: 0;
+    transform: perspective(1000px) translate3d(0, 50px, -20px);
+}
+
+.card_3 .cover_sub_1{
+    z-index: 1;
+    width: 100%;
+    height: 110%;
+    opacity: 0;
+}
+
+.card_3 .cover_sub_2{
+    z-index: 1;
+    height: 40%;
+    top: 30%;
+    left: 65%;
+    opacity: 0;
+}
+
+.card_3 .cover_sub_3{
+    z-index: 1;
+    height: 30%;
+    top: 60%;
+    /*left: 60%;*/
+    opacity: 0;
+}
+
+.card_3 .cover_sub_4{
+    z-index: 1;
+    height: 8%;
+    top: 70%;
+    left: 85%;
+    opacity: 0;
+}
+
+.card_3:hover .cover_sub_1{
+    opacity: 1;
+    transform: perspective(1000px) translate3d(0, -50px, 100px);
+}
+
+.card_3:hover .cover_sub_2{
+    opacity: 1;
+    transform: perspective(1000px) translate3d(0, -50px, 50px);
+}
+
+.card_3:hover .cover_sub_3{
+    opacity: 1;
+    transform: perspective(1000px) translate3d(0, -50px, 50px);
+}
+
+.card_3:hover .cover_sub_4{
+    opacity: 1;
+    transform: perspective(1000px) translate3d(0, -50px, 50px);
+}
+
+.card_3:hover .cover_back{
+    filter: blur(6px);
+}
+
+html, body { min-width: 1000px;}
+@media only screen and (min-width: 1000px) {
+    html, body { min-width: 1000px; }
+}

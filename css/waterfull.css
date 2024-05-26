@@ -1,0 +1,194 @@
+
+/*body{*/
+/*	margin:0;*/
+/*	padding:0;*/
+/*	background:url(bg.gif) 0 0 repeat #f7f5f5;*/
+/*	color:#333;*/
+/*	font-family:Cambria, Georgia, serif;*/
+/*	font-size:15px;*/
+/*	overflow-x:hidden;*/
+/*}*/
+/*hgroup{*/
+/*	display:block;*/
+/*}*/
+/*a {*/
+/*	color:#35BFFF;*/
+/*	text-decoration:none;*/
+/*}*/
+/*a:hover, a:active{*/
+/*	color:#91DCFF;*/
+/*}*/
+
+/* clearfix */
+/*.clearfix {*/
+/*	clear:both;*/
+/*}*/
+
+/*!* wrapper css *!*/
+/*#wrapper{*/
+/*	margin-top:70px;*/
+/*	width:100%;*/
+/*}*/
+/*#wrapper hgroup{*/
+/*	text-align:center;*/
+/*}*/
+/*#wrapper h2{*/
+/*	margin:5px 0;*/
+/*	color:#FF6D99;*/
+/*	text-shadow:1px 1px 2px #A50031;*/
+/*	font-size:33px;*/
+/*	font-family:Arial Narrow, Arial, sans-serif;*/
+/*}*/
+/*#wrapper h3{*/
+/*	font-style:italic;*/
+/*	font-weight:normal;*/
+/*	font-size:18px;*/
+/*	text-shadow:1px 1px 0 #fff;*/
+/*	color:#888;*/
+/*	margin:5px 0;*/
+/*}*/
+
+#container{
+	position:relative;
+	width:1200px;
+	/*width: 100%;*/
+	margin:0 auto 25px;
+	padding-bottom: 10px;
+
+}
+.grid{
+	width:188px;
+	min-height:100px;
+	padding: 15px;
+	background:#fff;
+	margin:8px;
+	font-size:12px;
+	float:left;
+	box-shadow: 0 1px 3px rgba(34,25,25,0.4);
+	-moz-box-shadow: 0 1px 3px rgba(34,25,25,0.4);
+	-webkit-box-shadow: 0 1px 3px rgba(34,25,25,0.4);
+
+	-webkit-transition: top 1s ease, left 1s ease;
+	-moz-transition: top 1s ease, left 1s ease;
+	-o-transition: top 1s ease, left 1s ease;
+	-ms-transition: top 1s ease, left 1s ease;
+	transition: 0.5s;
+	display: flex;
+
+}
+
+.grid strong {
+	border-bottom:1px solid #ccc;
+	margin:10px 0;
+	display:block;
+	padding:0 0 5px;
+	font-size:17px;
+}
+.grid .meta{
+	text-align:right;
+	color:#777;
+	font-style:italic;
+}
+
+.grid .imgholder{
+	display: flex;
+}
+
+.grid .imgholder img{
+	max-width:100%;
+	background:#ccc;
+	display:block;
+	transition: 0.5s;
+	border-radius: 10px;
+}
+
+.grid .weibo_user{
+	position: absolute;
+	bottom: 0;
+	display: flex;
+	transition: 0.5s;
+	opacity: 0;
+	align-items: center;
+	gap: 5px;
+	width: 100%;
+	left: 0;
+	justify-content: center;
+}
+
+.grid .weibo_user svg{
+	width: 10%;
+}
+
+.grid span{
+	font-size: 15px;
+	color: whitesmoke;
+}
+
+.grid:hover {
+	max-width:100%;
+	background:#ccc;
+	display:block;
+	cursor: pointer;
+}
+
+/*.grid:hover img{*/
+/*	transform: perspective(1000px) translate3d(0, -25px, 50px);*/
+/*}*/
+
+.grid:hover .weibo_user{
+	transform: translate3d(0, -15px, 50px);
+	opacity: 1;
+	backdrop-filter: blur(6px);
+}
+
+
+/*.cssFont_1 {*/
+/*	font-family: 'Festive', cursive;*/
+/*	font-size: 20px;*/
+/*	letter-spacing: 1px;*/
+/*	word-spacing: 0px;*/
+/*	color: #000000;*/
+/*	font-weight: bold;*/
+/*	text-decoration: none;*/
+/*	font-style: normal;*/
+/*	font-variant: normal;*/
+/*	text-transform: none;*/
+/*}*/
+
+.cssFont_1 {
+	font-family: Segoe Print;
+	font-size: 20px;
+	letter-spacing: 0px;
+	word-spacing: 0px;
+	color: #000000;
+	font-weight: bold;
+	text-decoration: none;
+	font-style: normal;
+	font-variant: normal;
+	text-transform: none;
+}
+
+
+[data-link] {
+	cursor: pointer;
+}
+
+@media screen and (max-width : 1240px) {
+	body{
+		overflow:auto;
+	}
+}
+@media screen and (max-width : 900px) {
+	#backlinks{
+		float:none;
+		clear:both;
+	}
+	#backlinks a{
+		display:inline-block;
+		padding-right:20px;
+	}
+	#wrapper_{
+		margin-top:90px;
+	}
+}
+/* ����������ͷ�� www.datouwang.com */
